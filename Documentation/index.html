@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>AVVA - HTML Template Documentation</title>
+
+    <!-- Style CSS -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".sidebar" data-offset="200">
+    <!-- Sidebar -->
+    <aside class="sidebar sidebar-boxed">
+        <ul class="navbar sidenav dropable">
+            <li><a class="sidenav-link" href="#getting_started" title="Getting Started">Getting Started</a></li>
+            <li><a class="sidenav-link" href="#css_structure" title="HEAD CSS Structure">CSS Structure</a></li>
+            <li><a class="sidenav-link" href="#js_structure" title="Javascript Structure">Javascript Structure</a></li>
+            <li><a class="sidenav-link" href="#html_structure" title="HTML Structure">HTML Structure</a></li>
+            <li><a class="sidenav-link" href="#used_fonts" title="Fonts used">Fonts Used</a></li>
+            <li><a class="sidenav-link" href="#change-color-option" title="Main Color Change Option">Main Color Change</a></li>
+            <li><a class="sidenav-link" href="#change-image-border" title="Make image rounded">Make image rounded</a></li>
+            <li><a class="sidenav-link" href="#change-container" title="Choose type of your site container">Change container width</a></li>
+            <li><a class="sidenav-link" href="#change-header-menu" title="Types of menu">Fixed menu</a></li>
+            <li><a class="sidenav-link" href="#full-menu-video" title="Types of menu">Full menu video</a></li>
+            <li><a class="sidenav-link" href="#edit-slider" title="Swiper Slider Edit Option">Swiper Edit Option</a></li>
+            <li><a class="sidenav-link" href="#edit-gsap-animations" title="GSAP Animations Edit Option">GSAP Animations Edit Option</a></li>
+            <li><a class="sidenav-link" href="#optimization-speed" title="Speed Optimization">Speed Optimization</a></li>
+        </ul>
+    </aside>
+    <!-- END Sidebar -->
+
+    <header class="site-header navbar-transparent">
+        <!-- Banner -->
+        <div class="banner">
+            <div class="container-fluid">
+                <h1 class="title"><strong>AVVA</strong> Documentation</h1>
+            </div>
+        </div>
+        <!-- END Banner -->
+    </header>
+
+    <main class="container-fluid">
+        <!-- Main content -->
+        <article class="main-content" role="main">
+            <section id="getting_started">
+                <div class="fluid">
+                    <h3>Getting Started</h3>
+                </div>
+                <p>The template folder <strong>Avva</strong> is available inside the downloaded zip file. Need to
+                    unzip the zip file to find the template also the documentation folder.</p>
+                <p>The <strong>files and folders structure</strong> is similar to the following:</p>
+                <ol>
+                    <li><strong>assets/css</strong> — folder with CSS files.</li>
+                    <li><strong>assets/fonts</strong> — folder with fonts files.</li>
+                    <li><strong>assets/images</strong> — folder with image files.</li>
+                    <li><strong>assets/js</strong> — folder with Javascript files.</li>
+                </ol>
+                <p>Upload the template files to the server with the help of one of the FTP-clients like FileZilla.</p>
+                <h6><strong>Files Edit & Upload:</strong></h6>
+                <p>Individual pages can be customized by opening in a code editor such as VS Code. Once all the
+                    customization completed then to make the website live you need to upload the updated project files
+                    to the hosting server for your own domain. The files can be uploaded using FTP client such as
+                    FileZilla.</p>
+            </section>
+            <section id="css_structure">
+                <div class="fluid">
+                    <h3>HEAD CSS Structure</h3>
+                </div>
+                <p>Followings are the <strong>css</strong> files which loaded inside the <strong>Head Section</strong>:
+                </p>
+                <pre class="line-numbers">
+<code class="language-markup">
+    <span class="comment">&lt;!--====== Favicon Icon ======--&gt;</span>
+    <span>&lt;<span class="tag">link</span> <span class="attr-name">rel</span>="<span class="attr-value">shortcut icon</span>" <span class="attr-name">href</span>="<span class="attr-value">assets/images/favicon.png</span>" <span class="attr-name">type</span>="<span class="attr-value">image/x-icon</span>"&gt;</span>
+    <span class="comment">&lt;!--====== Bootstrap ======--&gt;</span>
+    <span>&lt;<span class="tag">link</span> <span class="attr-name">rel</span>="<span class="attr-value">stylesheet</span>" <span class="attr-name">href</span>="<span class="attr-value">assets/css/bootstrap-5.0.2.min.css</span>"&gt;</span>
+    <span class="comment">&lt;!--====== Swiper Slider ======--&gt;</span>
+    <span>&lt;<span class="tag">link</span> <span class="attr-name">rel</span>="<span class="attr-value">stylesheet</span>" <span class="attr-name">href</span>="<span class="attr-value">assets/css/swiper.min.css</span>"&gt;</span>
+    <span class="comment">&lt;!--====== Main Style ======--&gt;</span>
+    <span>&lt;<span class="tag">link</span> <span class="attr-name">rel</span>="<span class="attr-value">stylesheet</span>" <span class="attr-name">href</span>="<span class="attr-value">assets/css/style.css</span>"&gt;</span>
+    <span class="comment">&lt;!--====== Responsive Style ======--&gt;</span>
+    <span>&lt;<span class="tag">link</span> <span class="attr-name">rel</span>="<span class="attr-value">stylesheet</span>" <span class="attr-name">href</span>="<span class="attr-value">assets/css/responsive.css</span>"&gt;</span>
+</code>
+</pre>
+            </section>
+            <section id="js_structure">
+                <div class="fluid">
+                    <h3>Javascript Structure</h3>
+                </div>
+                <p>Followings are the <strong>JS</strong> files which loaded before the end of <strong>HEAD or BODY
+                        Section:</strong>.</p>
+                <pre class="line-numbers">
+<code class="language-markup">
+    <span class="comment">&lt;!--====== Jquery ======--&gt;</span>
+    <span>&lt;<span class="tag">script</span> <span class="attr-name">src</span>="<span class="attr-value">assets/js/jquery.min.js</span>"&gt;&lt;<span class="tag">/script</span>&gt;</span>
+    <span class="comment">&lt;!--====== Bootstrap ======--&gt;</span>
+    <span>&lt;<span class="tag">script</span> <span class="attr-name">src</span>="<span class="attr-value">assets/js/bootstrap-5.0.2.min.js</span>"&gt;&lt;<span class="tag">/script</span>&gt;</span>
+    <span class="comment">&lt;!--====== Swiper ======--&gt;</span>
+    <span>&lt;<span class="tag">script</span> <span class="attr-name">src</span>="<span class="attr-value">assets/js/swiper.min.js</span>"&gt;&lt;<span class="tag">/script</span>&gt;</span>
+    <span class="comment">&lt;!--====== Gsap ======--&gt;</span>
+    <span>&lt;<span class="tag">script</span> <span class="attr-name">src</span>="<span class="attr-value">assets/js/gsap.min.js</span>"&gt;&lt;<span class="tag">/script</span>&gt;</span>
+    <span class="comment">&lt;!--======  Scroll Trigger ======--&gt;</span>
+    <span>&lt;<span class="tag">script</span> <span class="attr-name">src</span>="<span class="attr-value">assets/js/ScrollTrigger.js</span>"&gt;&lt;<span class="tag">/script</span>&gt;</span>
+    <span class="comment">&lt;!--====== Custom script ======--&gt;</span>
+    <span>&lt;<span class="tag">script</span> <span class="attr-name">src</span>="<span class="attr-value">assets/js/main.js</span>"&gt;&lt;<span class="tag">/script</span>&gt;</span>
+</code>
+</pre>
+            </section>
+            <section id="html_structure">
+                <div class="fluid">
+                    <h3>HTML Structure</h3>
+                </div>
+                The <strong>Avva</strong> is a responsive template and is based on the <strong>Bootstrap
+                    Framework</strong>. For more information you can check the <a class="main-link" target="_blank"
+                    href="https://getbootstrap.com/"><strong>Bootstrap CSS</strong></a>.
+                <p>The general template structure is the same throughout the template and each of the part is under a
+                    section with a section id name. Here is the <strong>general structure:</strong></p>
+                <pre class="line-numbers">
+<code class="language-markup">
+<span class="comment">&lt;!-- Media Section Start --&gt;</span>
+&lt;section class="media-grid section-space"&gt;
+    &lt;div class="container-fluid"&gt;
+        &lt;div class="media-grid-items"&gt;
+            &lt;div class="row nomargin"&gt;
+                &lt;div class="col-lg-6 col-12 nopadding"&gt;
+                    &lt;a href="cases-single.html" class="media-grid-item hover-underline-trigger link-cursor"&gt;
+                        &lt;div class="media-grid-img"&gt;
+                            &lt;img src="img/gallery-2.jpg"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="media-grid-text"&gt;
+                            &lt;h3&gt;Identity&lt;/h3&gt;
+                            &lt;h2 class="hover-underline light-line reverse"&gt;&lt;span class="link-text-hidden"&gt;Beeline worldwide care&lt;/span&gt;
+                                &lt;span class="link-text"&gt;Beeline worldwide care&lt;/span&gt;
+                            &lt;/h2&gt;
+                        &lt;/div&gt;
+                        &lt;div class="back-animation"&gt;&lt/div&gt;
+                    &lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class="col-lg-6 col-12 nopadding"&gt;
+                    &lt;a href="cases-single.html" class="media-grid-item hover-underline-trigger link-cursor"&gt;
+                        &lt;div class="media-grid-img"&gt;
+                            &lt;img src="img/gallery-3.jpg"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="media-grid-text"&gt;
+                            &lt;h3&gt;Interface&lt;/h3&gt;
+                            &lt;h2 class="hover-underline light-line reverse"&gt;&lt;span class="link-text-hidden">Tomona App&lt;/span&gt;
+                                &lt;span class="link-text">Tomona App&lt;/span&gt;
+                            &lt;/h2&gt;
+                        &lt;/div&gt;
+                        &lt;div class="back-animation">&lt;/div&gt;
+                    &lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+<span class="comment">&lt;!-- Media Section End --&gt;</span>
+</code>
+</pre>
+            </section>
+            <section id="used_fonts">
+                <div class="fluid">
+                    <h3>Fonts Used</h3>
+                </div>
+                <p>
+                    Font code can be found in the &quot;<strong>style.css</strong>&quot; file path:
+                    assets/css/style.css
+                </p>
+
+                <pre class="line-numbers">
+<code>
+/*== Fonts ==*/
+<span class="dark">@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500,700');</span>
+body {
+    <span class="property">font-family</span>: <span class="string">'Montserrat'</span>, sans-serif;
+    font-weight: 400;
+    .......
+    .......
+</code>
+</pre>
+            </section>
+            <section id="change-color-option">
+                <div class="fluid">
+                    <h3>Main Color Change Option</h3>
+                </div>
+                <p>File path: assets/css/style.css</p>
+
+                <pre class="line-numbers">
+<code class="language-css">
+// colors
+<span class="dark">
+:root {
+    <span class="dark"><span class="property">--main-color</span>: #000000</span>;
+    <span class="dark"><span class="property">--secondar-color</span>: #0047FF</span>;
+    <span class="dark"><span class="property">--third-color</span>: #ffffff</span>;
+}
+</span>
+</code>
+</pre>
+            </section>
+            <section id="change-image-border">
+                <div class="fluid">
+                    <h3>Make image rounded</h3>
+                </div>
+                <p>You can Make image rounded by adding class <strong>.image-rounded</strong></p>
+                <pre class="line-numbers">
+<code class="language-markup">
+    <span class="comment">&lt;!--====== Rounded image container ======--&gt;</span>
+    <span>&lt;<span class="tag">img</span> <span class="attr-name">src</span>="<span class="attr-value">assets/images/agency/service.jpg</span>" <span class="attr-name">class</span>="<span class="attr-value">full-img img-rounded</span>"&gt;</span>
+</code>
+</pre>
+            </section>
+            <section id="change-container">
+                <div class="fluid">
+                    <h3>How to change main container</h3>
+                </div>
+                <p>You can use two types of container.</p>
+                <pre class="line-numbers">
+<code class="language-markup">
+    <span class="comment">&lt;!--====== Full container ======--&gt;</span>
+    <span>&lt;<span class="tag">div</span> <span class="attr-name">class</span>="<span class="attr-value">container-fluid</span>"&gt;<span>&lt;/div&gt;</span></span>
+
+    <span class="comment">&lt;!--====== Boxed container ======--&gt;</span>
+    <span>&lt;<span class="tag">div</span> <span class="attr-name">class</span>="<span class="attr-value">container</span>"&gt;<span>&lt;/div&gt;</span></span>
+</code>
+</pre>
+            </section>
+            <section id="change-header-menu">
+                <div class="fluid">
+                    <h3>Sticky menu</h3>
+                </div>
+                <p>To make header sticky you should add class <strong>.fixed-header</strong> or remove it to make it unsticky.</p>
+                <pre class="line-numbers">
+<code class="language-markup">
+    <span class="comment">&lt;!--====== Page Header Start ======--&gt;</span>
+    <span>&lt;<span class="tag">header</span> <span class="attr-name">class</span>="<span class="attr-value">page-header fixed-header</span>"&gt;</span>
+        <span>&lt;<span class="tag">div</span> <span class="attr-name">class</span>="<span class="attr-value">container-fluid</span>"&gt;<span>&lt;/div&gt;</span></span>
+        .......
+        .......
+    </code>
+</pre>
+            </section>
+            <section id="full-menu-video">
+                <div class="fluid">
+                    <h3>Full menu background video</h3>
+                </div>
+                <p>To use full menu background video first you need to download the video from <a class="main-link" target="_blank" href="https://www.pexels.com/ru-ru/video/3611035/"><strong>pexels.com</strong></a> and import it as shown below:</p>
+                <pre class="line-numbers">
+<code class="language-markup">
+    <span class="comment">&lt;!-- Mega menu background video --&gt;</span>
+    <span>&lt;<span class="tag">div</span> <span class="attr-name">class</span>="<span class="attr-value">menu-video</span>"&gt;</span>
+        <span>&lt;<span class="tag">video</span> <span class="attr-name">width</span>="<span class="attr-value">100</span>" <span class="attr-name">loop</span> <span class="attr-name">muted</span> <span class="attr-name">autoplay</span>&gt;</span>
+            <span>&lt;<span class="tag">source</span> <span class="attr-name">src</span>="<span class="attr-value">assets/images/video/YOUR_VIDEO_NAME.mp4</span>" <span class="attr-name">type</span>="<span class="attr-value">video/mp4</span>"/&gt;</span>
+        <span>&lt;<span class="tag">video</span>&gt;</span>
+    <span>&lt;<span class="tag">div</span>&gt;</span>
+    </code>
+</pre>
+            </section>
+            <section id="edit-slider">
+                <div class="fluid">
+                    <h3>Swiper Edit Option</h3>
+                </div>
+                <p>File path: assets/js/main.js</p>
+
+                <p>If you want to change items per view change <strong>slidesPerView</strong>, to change space between items, change <strong>spaceBetween</strong>.</p>
+                <pre class="line-numbers">
+<code class="language-css">
+
+// 05. Partner Slider
+if($(".partner-slider").length){
+    new Swiper(".partner-slider", {
+        spaceBetween: 30,
+        draggable: true,
+        grabCursor: true,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            0: {
+               <span class="property">slidesPerView: <span class="number">3</span></span>,
+               <span class="property">spaceBetween: <span class="number">15</span></span>,
+            },
+            575: {
+                <span class="property">slidesPerView: <span class="number">3</span></span>,
+                <span class="property">spaceBetween: <span class="number">30</span></span>,
+            },
+            992: {
+                <span class="property">slidesPerView: <span class="number">4</span></span>,
+            },
+            1200: {
+                <span class="property">slidesPerView: <span class="number">5</span></span>,
+            },
+            1600: {
+                <span class="property">slidesPerView: <span class="number">6</span></span>,
+            },
+            2000: {
+                <span class="property">slidesPerView: <span class="number">7</span></span>,
+            },
+            2400: {
+                <span class="property">slidesPerView: <span class="number">8</span></span>,
+            },
+            3000: {
+                <span class="property">slidesPerView: <span class="number">9</span></span>,
+            },
+            3400: {
+                <span class="property">slidesPerView: <span class="number">10</span></span>,
+            },
+        },
+    });
+}
+
+</code>
+</pre>
+                <p><strong>More Info please browser the link: <a class="main-link"
+                            href="https://swiperjs.com/swiper-api" target="_blank">Swiper Docs Options</a></strong></p>
+            </section>
+            <section id="edit-gsap-animations">
+                <div class="fluid">
+                    <h3>GSAP Animations Edit Option</h3>
+                </div>
+                <p>File path: assets/js/main.js</p>
+
+                <pre class="line-numbers">
+<code>
+
+// 09. Gsap Animations
+// Gsap Initial animations when page loads
+<span class="dark"><span class="attr-name">gsap</span>.<span class="comment">from</span>(" <span class="attr-value">.heading-titles .title</span>", {
+    <span class="property">y</span>: 100,
+    <span class="property">opacity</span>: 0,
+});</span></code>
+</pre>
+                <p><strong>More Info please browser the link: <a class="main-link"
+                            href="https://greensock.com/docs/" target="_blank">GSAP Docs Options</a></strong></p>
+            </section>
+            <section id="optimization-speed">
+                <div class="fluid">
+                    <h3>Speed Optimization</h3>
+                </div>
+
+                <p>Please optimize all images KB, MB also, use the image size following by placeholder file path:
+                    assets/images/..</p>
+                <p>- <a class="main-link" href="https://tinypng.com/" target="_blank">Tinypng</a></p>
+
+                <p>Please minify all CSS file path: assets/css/..</p>
+                <p>- <a class="main-link" href="https://cssminifier.com/" target="_blank">CSS Minifier</a></p>
+
+
+                <p>Please minify all JS file path: assets/js/..</p>
+                <p>- <a class="main-link" href="https://javascript-minifier.com/" target="_blank">Javascript
+                        Minifier</a></p>
+            </section>
+            <section id="change-image">
+                <div class="fluid">
+                    <h3>How to Change Image?</h3>
+                </div>
+
+                <p>Please go to the image file 'path: assets/images/...' replace the image which one you want following
+                    placeholder image size & name</p>
+            </section>
+            <section id="change-images">
+                <div class="fluid">
+                    <h3>How to Add New Updates of Existing Template</h3>
+                </div>
+
+                <p>
+                    After a certain time, we will update our project based on the latest technology but in your
+                    template, you need to update on your own if you want.
+                </p>
+            </section>
+            <section id="credits">
+                <div class="fluid">
+                    <h3>Credits</h3>
+                </div>
+                <p><strong>Note:</strong> All <strong>images</strong> are used for <strong>preview</strong> purpose only
+                    and <strong>not included</strong> in the <strong>final purchase</strong> files.</p>
+                <p> <strong>Images from:</strong><br />
+                    <a class="main-link" target="_blank" href="https://pixabay.com/">https://pixabay.com/</a><br />
+                    <a class="main-link" target="_blank" href="https://unsplash.com/">https://unsplash.com/</a><br />
+                    <a class="main-link" target="_blank"
+                        href="https://www.freepik.com/">https://www.freepik.com/</a><br />
+                </p>
+                <p>
+                    <strong>Fonts:</strong><br />
+                    <a class="main-link" target="_blank"
+                        href="https://fonts.google.com/specimen/Montserrat">Montserrat</a><br />
+                </p>
+            </section>
+        </article>
+        <!-- END Main content -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer"></footer>
+    <!-- END Footer -->
+
+
+    <!-- Scripts -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

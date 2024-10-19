@@ -1,0 +1,27 @@
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+i,
+span,
+a {
+    display: inline-block;
+}
+
+
+ul,
+a,
+a:hover {
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}

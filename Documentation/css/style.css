@@ -1,0 +1,142 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%
+}
+section {
+    padding-top: 20px;
+}
+
+.fluid {
+    padding-bottom: 9px;
+    margin: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.sidebar {
+    background-color: #0047FF;
+    width: 280px;
+    padding-top: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.navbar {
+    padding-left: 0;
+    margin-bottom: 0;
+    display: block;
+    list-style: none;
+}
+
+.sidenav {
+    min-width: 180px;
+}
+.sidenav>li {
+    position: relative;
+    font-size: 16px;
+    line-height: 36px;
+    color: #777;
+}
+.sidenav-link {
+    color: #fff;
+    padding: 5px 20px;
+    display: block;
+    transition: .3s all ease-in-out;
+}
+
+.sidebar-boxed~footer, .sidebar-boxed~header, .sidebar-boxed~main {
+    padding-left: 280px;
+}
+.sidebar-boxed~main .main-content {
+    padding-left: 60px;
+    padding-right: 75px;
+}
+
+.sidenav-link:hover {
+    background-color: #ffffff;
+}
+.sidenav-link:hover {
+    color: #000000;
+}
+
+.main-content {
+    font-size: 16px;
+    line-height: 27px;
+    padding: 50px 50px 50px 0;
+}
+.title {
+    font-weight: 100;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.banner {
+    padding: 70px 60px 48px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #0c1411;
+}
+
+pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.main-link {
+    color: #FF2D55;
+}
+.main-link:hover {
+    color: #FF2D55;
+}
+.dark {
+    color: #000000;
+}
+.attr-value {
+    color: #07a;
+}
+
+.attr-name {
+    color: #690;
+}
+.tag {
+    color: #905;
+}
+.comment {
+    color: #708090;
+}
+.punctuation {
+    color: #999;
+}
+.function {
+    color: #dd4a68;
+}
+.number {
+    color: #000000;
+}
+.property {
+    color: #905;
+}
+.string {
+    color: #a67f59;
+}
+.language-css {
+    color: #690;;
+}
+
+.site-footer {
+    height: 70px;
+    background-color: #000000;
+}
